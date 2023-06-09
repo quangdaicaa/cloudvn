@@ -20,8 +20,6 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('WP_HOME','http://47.245.110.87');
-define('WP_SITEURL','http://47.245.110.87');
 define( 'DB_NAME', 'cloudvn' );
 
 /** Database username */
@@ -31,10 +29,10 @@ define( 'DB_USER', 'cloudvn' );
 define( 'DB_PASSWORD', 'Ac195mNb' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'pc-3ns3o361l0v3heny5.mysql.polardb.rds.aliyuncs.com' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8bm4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -97,3 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+// define( 'WP_HOME', 'https://cloudvietnam.com.vn' );
+// define( 'WP_SITEURL', 'https://cloudvietnam.com.vn' );
+define('FORCE_SSL_ADMIN', true);
